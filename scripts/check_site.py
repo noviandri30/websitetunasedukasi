@@ -38,7 +38,8 @@ for page in PAGES:
         if not (ROOT / asset).is_file(): errors.append(f"{page.name}: missing asset {asset}")
     for href in p.links:
         if href.startswith(("http://","https://","mailto:","tel:","data:")): continue
-        base,_,fragment=href.partition("#")
+        parsed=urlsplit(href)
+        base, fragment = parsed.path, parsed.fragment
         target=(ROOT / base) if base else page
         if not target.is_file(): errors.append(f"{page.name}: broken link {href}"); continue
         if fragment:
