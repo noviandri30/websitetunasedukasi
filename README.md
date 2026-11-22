@@ -1,24 +1,28 @@
-# Website PKBM Tunas Edukasi
+# Tunas Edukasi — Website Multi-page
 
-Website resmi **Tunas Edukasi** (PKBM Tunas Karya Edukasi Indonesia), dikembangkan dengan pendekatan joyful, human-centered, dan mobile-first.
+Website prototipe PKBM Tunas Karya Edukasi Indonesia untuk domain https://tunasedukasi.sch.id.
 
-## Identitas
-- Domain tujuan: https://tunasedukasi.sch.id
-- NPSN: P9957052
-- Warna primer: `#38a6ea`, `#0072b2`
-- Warna sekunder: `#a92974`, `#eee8a9`
-- Program: Homeschooling, Pendidikan Kesetaraan Paket A, Paket B, dan Paket C.
+## Halaman
+Beranda, Tentang Kami, Program Belajar, Paket A, Paket B, Paket C, Homeschooling, Cara Belajar, Inspirasi, FAQ, dan Kontak.
 
-## Pengembangan
-Kode website dikerjakan terlebih dahulu di branch `staging` agar tidak mengganti website produksi tanpa audit dan persetujuan deploy. Versi awal sengaja memakai HTML, CSS, dan JavaScript tanpa build agar kompatibel dengan hosting statis.
+## Fitur
+- Desain joyful responsif dengan warna utama #38a6ea / #0072b2 dan aksen #a92974 / #eee8a9.
+- Animasi ringan, hover interaktif, halaman program terpisah, dropdown navigasi dan menu mobile.
+- Filter inspirasi, kategori FAQ dan draft formulir konsultasi.
+- HTML, CSS, dan JavaScript standar; tidak memerlukan build Node.js atau database.
 
-Foto dari Pexels adalah **ilustrasi**, bukan dokumentasi kegiatan PKBM. Ganti dengan foto berizin dan dokumentasi resmi sebelum publikasi. Nomor telepon, WhatsApp, harga, jadwal, dan detail pendaftaran yang belum terkonfirmasi tidak ditebak.
+## Jalankan secara lokal
+Buka `index.html` di browser, atau jalankan `python -m http.server 8000` dari root proyek.
 
-## Deploy
-1. Verifikasi registrasi domain dan target hosting di hPanel.
-2. Uji tampilan di desktop/mobile dan cek semua tautan.
-3. Backup website lama.
-4. Unggah file dari branch yang disetujui ke document root website `tunasedukasi.sch.id`.
-5. Pastikan HTTPS, sitemap, robots, dan formulir kontak bekerja.
+## Pengujian
+`python scripts/check_site.py` (membutuhkan Node.js untuk validasi sintaks JavaScript).
 
-Sumber identitas lembaga: https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/P9957052
+## Catatan sebelum produksi
+- Konten contoh aktivitas bukan jadwal resmi lembaga.
+- Biaya, jadwal, syarat pendaftaran, dan kanal komunikasi belum dikonfirmasi.
+- Form konsultasi adalah demo untuk membuat draft; belum mengirim pesan.
+- Periksa identitas dan data pada sumber resmi: https://referensi.data.kemendikdasmen.go.id/pendidikan/npsn/P9957052.
+- Review keseluruhan konten, dokumentasi, izin aset, dan lakukan backup sebelum deploy Hostinger.
+
+## Branch
+`staging` digunakan untuk review; branch `main` dan deployment produksi tidak diubah otomatis.

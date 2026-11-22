@@ -1,7 +1,7 @@
-name: Website quality checks
+name: Website multi-page quality checks
 on:
   push:
-    branches: [staging, main]
+    branches: [main, staging]
   pull_request:
     branches: [main]
 permissions:
@@ -14,5 +14,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Validate static website
-        run: node scripts/validate-site.mjs
+      - name: Validate multi-page website
+        run: python scripts/check_site.py

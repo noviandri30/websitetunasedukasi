@@ -1,14 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="306" height="80" viewBox="0 0 306 80" role="img" aria-labelledby="t">
-<title id="t">Tunas Edukasi</title>
-<g transform="translate(1 5)">
-  <rect x="0" y="1" width="68" height="68" rx="24" fill="#e4f5ff"/>
-  <circle cx="52" cy="19" r="7" fill="#eee8a9"/>
-  <path d="M34 60V35" fill="none" stroke="#0072b2" stroke-width="5.8" stroke-linecap="round"/>
-  <path d="M33 40C20 40 13 31 12 21c14-2 23 5 25 17" fill="#38a6ea"/>
-  <path d="M34 35c2-14 13-21 26-18-1 13-9 22-26 22" fill="#a92974"/>
-  <path d="M19 59h30" stroke="#0072b2" stroke-width="5" stroke-linecap="round"/>
-</g>
-<text x="83" y="36" font-size="30" font-weight="900" font-family="Nunito, Arial, sans-serif" letter-spacing="-1.2" fill="#0072b2">tunas</text>
-<text x="85" y="60" font-size="22" font-weight="900" font-family="Nunito, Arial, sans-serif" letter-spacing="3.2" fill="#a92974">EDUKASI</text>
-<circle cx="203" cy="21" r="3.6" fill="#eee8a9"/><path d="M211 12v7m-4-3.5h8" stroke="#38a6ea" stroke-width="2.5" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 78" role="img" aria-label="Tunas Edukasi">
+ <g transform="translate(4 4)">
+  <rect width="69" height="69" rx="23" fill="#E6F6FE"/>
+  <circle cx="52" cy="16" r="7" fill="#EEE8A9"/>
+  <path d="M35 58V36" stroke="#0072B2" stroke-linecap="round" stroke-width="5"/>
+  <path d="M34 43C19 42 14 30 13 22c16-1 24 7 23 22" fill="#38A6EA"/>
+  <path d="M34 38C35 22 46 17 58 20 57 32 48 40 34 38" fill="#A92974"/>
+  <path d="M20 59h28" stroke="#0072B2" stroke-width="5" stroke-linecap="round"/>
+ </g>
+ <text x="85" y="34" font-family="Nunito, Arial, sans-serif" font-weight="900" font-size="31" fill="#0072B2" letter-spacing="-1.5">tunas</text>
+ <text x="86" y="59" font-family="Nunito, Arial, sans-serif" font-weight="900" font-size="20" fill="#A92974" letter-spacing="3.5">EDUKASI</text>
+ <path d="M212 12v12m-6-6h12" stroke="#38A6EA" stroke-width="3" stroke-linecap="round"/>
 </svg>
